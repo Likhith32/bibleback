@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+psycopg2-binary
+python-dotenv
+google-genai
+pydantic
+pydantic-settings
+reportlab
+python-docx

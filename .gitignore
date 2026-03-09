@@ -1,0 +1,113 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.whl
+
+# ========================
+# Virtual Environment
+# ========================
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# ========================
+# Environment Variables
+# ========================
+.env
+.env.*
+!.env.example
+
+# ========================
+# Flask
+# ========================
+instance/
+.webassets-cache
+
+# ========================
+# Database
+# ========================
+*.sqlite3
+*.db
+*.db-journal
+migrations/versions/*.pyc
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/
+log/
+
+# ========================
+# Testing & Coverage
+# ========================
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+nosetests.xml
+coverage.xml
+
+# ========================
+# IDE & Editor Files
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# ========================
+# OS Generated Files
+# ========================
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ========================
+# Docker
+# ========================
+*.tar
+docker-compose.override.yml
+.docker/
+
+# ========================
+# Temporary Files
+# ========================
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.orig
+
+# ========================
+# Distribution / Packaging
+# ========================
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ========================
+# Byte-compiled / Cached
+# ========================
+*.pyc
+*.pyo
+*.pyd
