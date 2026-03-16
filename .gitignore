@@ -1,113 +1,84 @@
-# ========================
-# Python
-# ========================
+# ==============================
+# Python / FastAPI / Flask
+# ==============================
+
+# Byte-compiled / cache
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-*.egg
-*.egg-info/
-dist/
-build/
-eggs/
-*.whl
 
-# ========================
-# Virtual Environment
-# ========================
+# Virtual environments
 venv/
 env/
-.venv/
-.env/
 ENV/
+.venv/
 
-# ========================
-# Environment Variables
-# ========================
+# Flask instance folder
+instance/
+
+# Environment variables
 .env
 .env.*
-!.env.example
 
-# ========================
-# Flask
-# ========================
-instance/
-.webassets-cache
-
-# ========================
-# Database
-# ========================
-*.sqlite3
-*.db
-*.db-journal
-migrations/versions/*.pyc
-
-# ========================
 # Logs
-# ========================
 *.log
-logs/
-log/
 
-# ========================
-# Testing & Coverage
-# ========================
-.coverage
-htmlcov/
-.pytest_cache/
-.tox/
-nosetests.xml
-coverage.xml
+# SQLite database
+*.db
+*.sqlite3
 
-# ========================
-# IDE & Editor Files
-# ========================
+# Python build files
+build/
+dist/
+*.egg-info/
+
+# ==============================
+# IDE / Editor
+# ==============================
+
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
-.project
-.pydevproject
 
-# ========================
-# OS Generated Files
-# ========================
+# ==============================
+# OS files
+# ==============================
+
 .DS_Store
-.DS_Store?
-._*
 Thumbs.db
-ehthumbs.db
-Desktop.ini
+desktop.ini
 
-# ========================
-# Docker
-# ========================
-*.tar
-docker-compose.override.yml
-.docker/
+# ==============================
+# Uploads / User files
+# ==============================
 
-# ========================
-# Temporary Files
-# ========================
+uploads/
+static/uploads/
+
+# ==============================
+# AI / ML models (important)
+# ==============================
+
+models/
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# ==============================
+# Temporary files
+# ==============================
+
 tmp/
 temp/
-*.tmp
-*.bak
-*.swp
-*.orig
+.cache/
 
-# ========================
-# Distribution / Packaging
-# ========================
-*.manifest
-*.spec
-pip-log.txt
-pip-delete-this-directory.txt
+# ==============================
+# Testing
+# ==============================
 
-# ========================
-# Byte-compiled / Cached
-# ========================
-*.pyc
-*.pyo
-*.pyd
+.coverage
+htmlcov/
+.pytest_cache/

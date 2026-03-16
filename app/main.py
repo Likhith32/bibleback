@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 # ── App ─────────────────────────────────────────────────────────
 app = FastAPI(
-    title="Bible Study Workspace API",
+    title="Galilee Workspace API",
     version="2.0.0",
     description="AI-powered Bible study backend with smart search, sermons, cross-references, and more.",
 )
@@ -55,7 +55,7 @@ async def log_requests(request: Request, call_next):
 # ── Startup / Shutdown events ──────────────────────────────────
 @app.on_event("startup")
 async def startup_event():
-    logger.info("🚀 Sacred Study Space API starting...")
+    logger.info("🚀 Galilee Workspace API starting...")
     logger.info("🔎 Checking database connection...")
 
     from app.database.db import db_pool
@@ -67,7 +67,7 @@ async def startup_event():
 
 @app.on_event("shutdown")
 async def shutdown_event():
-    logger.info("🛑 Sacred Study Space API shutting down...")
+    logger.info("🛑 Galilee Workspace API shutting down...")
 
     from app.database.db import db_pool
     if db_pool:
@@ -86,7 +86,7 @@ app.include_router(suggestions.router, tags=["Suggestions"])
 
 @app.get("/")
 async def root():
-    return {"message": "Bible Study Workspace API is running", "version": "2.0.0"}
+    return {"message": "Galilee Workspace API is running", "version": "2.0.0"}
 
 
 @app.get("/health")
